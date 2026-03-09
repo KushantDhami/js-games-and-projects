@@ -24,6 +24,10 @@ The classic Nokia-style snake game built on a coordinate grid system.
 A sequence-memorization game that progressively gets faster and harder.
 * **Key Concepts:** Asynchronous JavaScript (`async/await` and Promises) to replace messy `setInterval` loops, sequential timing logic, and advanced CSS pseudo-elements (`::after`) for glowing visual feedback.
 
+### 6. Classic Tic Tac Toe
+A sleek, responsive take on the traditional paper-and-pencil game with robust win, lose, and draw detection.
+* **Key Concepts:** 1D array state management mapped to a 2D user interface, boolean state locking to prevent illegal moves, algorithmic win-condition checking using multi-dimensional index arrays, and CSS Grid for perfect layout geometry.
+  
 ---
 
 ## 🛠️ Tech Stack
