@@ -1,0 +1,84 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #2b2b2b;
+  text-align: center;
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#game-arena {
+  height: 600px;
+  width: 600px;
+  background-color: #1a1a1a;
+  position: relative;
+  border: 5px solid #444;
+  margin-bottom: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+}
+
+#score-board {
+  font-size: 28px;
+  font-weight: bold;
+  color: #fff;
+  margin: 10px 0 20px 0;
+  letter-spacing: 2px;
+}
+
+.start-button {
+  background-color: #ff4757;
+  color: white;
+  padding: 12px 32px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(255, 71, 87, 0.3);
+  transition: transform 0.1s ease;
+}
+
+.start-button:active {
+  transform: scale(0.95);
+}
+
+.food {
+  width: 20px;
+  height: 20px;
+  background-image: url("./apple.png");
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  border-radius: 50%;
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.15);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.snake {
+  width: 20px;
+  height: 20px;
+  background-color: #2ed573;
+  position: absolute;
+  border-radius: 4px;
+  border: 1px solid #1a1a1a;
+}
+
+.snake-head {
+  background-color: #1e90ff;
+  z-index: 10;
+}

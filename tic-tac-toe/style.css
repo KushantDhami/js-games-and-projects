@@ -1,0 +1,53 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: rgb(224, 216, 206);
+  text-align: center;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.game-arena {
+  width: 600px;
+  height: 600px;
+  border: 2px solid #666;
+  margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  background-color: #3a3c3e;
+  transition: background-color 0.3s ease;
+}
+
+.game-arena.win {
+  background-color: #5e5155;
+}
+
+.cell {
+  font-family: "Permanent Marker", cursive, sans-serif;
+  border: 1px solid #ecd7ba;
+  cursor: pointer;
+  font-size: 125px;
+  color: #04c0b2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cell:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.score {
+  background-color: orangered;
+  color: white;
+  padding: 15px 30px;
+  text-align: center;
+  font-size: 18px;
+  margin: 4px 0;
+  font-weight: bold;
+  border-radius: 6px;
+}
